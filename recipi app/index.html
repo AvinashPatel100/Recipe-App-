@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Patel Avinash</h1>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#categories">Categories</a></li>
+                <li><a href="#popular">Popular</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+        <div class="search-section">
+            <input type="text" id="searchInput" placeholder="Search for recipes..." />
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </header>
+
+    <section class="featured-recipes">
+        <h2>Featured Recipes</h2>
+        <div class="featured-carousel">
+        </div>
+    </section>
+
+    <main id="recipeContainer" class="recipe-container">
+        <div class="filters">
+            <select id="cuisineFilter">
+                <option value="">Select Cuisine</option>
+                <option value="indian">Indian</option>
+                <option value="italian">Italian</option>
+                <option value="chinese">Chinese</option>
+                <option value="mexican">Mexican</option>
+            </select>
+            <select id="dietFilter">
+                <option value="">Dietary Preferences</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="gluten-free">Gluten Free</option>
+            </select>
+        </div>
+        
+    </main>
+
+    <section class="newsletter">
+        <h3>Subscribe to Our Newsletter</h3>
+        <p>Get weekly recipe updates and cooking tips!</p>
+        <form class="newsletter-form">
+            <input type="email" placeholder="Enter your email">
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: Patelavinash31596@gmail.com</p>
+                <p>Phone: 99137 43290</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <p>Patel Avinash</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
